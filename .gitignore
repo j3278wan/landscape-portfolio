@@ -13,6 +13,7 @@ node_modules/
 
 # Rebuild these with scripts/package_site.py; keep original site assets in Git.
 /build/
+/out/
 /dist/downloads/
 /*.zip
 /*.tar.gz
