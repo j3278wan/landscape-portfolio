@@ -10,7 +10,7 @@ a:focus-visible { outline:2px solid currentColor; outline-offset:6px; }
 .home-header { display:flex; align-items:center; justify-content:space-between; gap:28px; position:relative; z-index:2; }
 .home-brand { display:flex; align-items:center; gap:16px; font-size:15px; letter-spacing:-.015em; }
 .home-brand img { display:block; width:52px; height:52px; }
-.home-nav { display:flex; gap:38px; font-size:12px; }
+.home-nav { display:flex; gap:38px; font-size:14.4px; }
 .home-nav a { display:flex; min-height:44px; align-items:center; }
 .home-nav a:hover { text-decoration:underline; text-underline-offset:7px; }
 .home-main { position:relative; isolation:isolate; display:grid; grid-template-columns:minmax(0,1fr) 340px; align-items:center; gap:9%; padding-bottom:24px; }
@@ -49,7 +49,7 @@ h1 em { font-family:Georgia,'Times New Roman',serif; font-weight:400; letter-spa
  .home-shell { padding-inline:22px; grid-template-rows:92px 1fr 62px; height:auto; min-height:max(740px,100svh); }
  .home-brand { gap:10px; font-size:12px; }
  .home-brand img { width:44px; height:44px; }
- .home-nav { gap:20px; font-size:11px; }
+ .home-nav { gap:20px; font-size:13.2px; }
  .home-main { display:flex; flex-direction:column; justify-content:center; align-items:stretch; gap:46px; padding-block:18px 30px; }
  .brand-art { width:100%; top:6%; left:0; transform:none; opacity:.54; }
  .home-intro { padding:0; }

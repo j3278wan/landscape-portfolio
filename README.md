@@ -5,9 +5,9 @@ A landscape design portfolio and a project for learning front-end development. I
 ## Website and source
 
 - [Website](https://jessie-wang-landscape-preview.dyeddrum8.chatgpt.site)
-- [Private GitHub repository](https://github.com/j3278wan/landscape-portfolio) — access requires an authorized GitHub account.
+- [Public GitHub repository](https://github.com/j3278wan/landscape-portfolio)
 
-The owner can download the source through GitHub’s **Code → Download ZIP**, or clone it:
+Download the source through GitHub’s **Code → Download ZIP**, or clone it:
 
 ```bash
 git clone https://github.com/j3278wan/landscape-portfolio.git
@@ -41,16 +41,19 @@ Open [http://localhost:8000](http://localhost:8000). On Windows, you can use `py
 | `dist/about.html` / `contact.html` / `profile.css` | Personal introduction, portrait, contact details, and layout |
 | `dist/styles.css` / `script.js` | Shared page styles, mobile menu, image enlargement, and Esc handling |
 | `dist/case-interactions.css` / `.js` | Case-study view switching and reading progress |
+| `dist/video-player.js` | Native video timeline compatibility for static hosting |
 | `dist/playground.html` / `garden.css` / `garden.js` | Plant previews, drag planting, undo, seasons, and lighting |
-| `dist/assets/` | Project media, portrait, and branding; `manifest.json` records provenance privately |
-| `dist/download.html` / `download.js` | Owner-only source-package tools, excluded from public deployment |
-| `scripts/` | Python tools for checks, offline previews, and private source packages |
+| `dist/assets/` | Project media, portrait, and branding; `manifest.json` records provenance in the repository |
+| `dist/download.html` / `download.js` | Local source-package utilities, excluded from the deployed website |
+| `scripts/` | Python tools for checks, offline previews, and local source packages |
+
+Videos keep the browser’s native controls. When an online video is near the viewport or receives interaction, `video-player.js` loads the full file into a browser-local Blob only if the player does not already expose full native seeking. Local files and bundled offline sources keep native playback without this extra download.
 
 ## Image provenance
 
 Site photographs use `Existing Site`; design visualizations use `Design Rendering`; drawings and plant lists use `Planting Plan` and `Plant Schedule`. Renderings do not represent completed construction.
 
-The original Poolside SketchUp model was not saved. Its current `studies/model-study.png` is an AI-assisted model-style reconstruction from a supplied rendering, not a recovered or editable model. The website uses concise captions; the private `dist/assets/manifest.json` records the actual source. Planting’s model image is an original uploaded JPG.
+The original Poolside SketchUp model was not saved. Its current `studies/model-study.png` is an AI-assisted model-style reconstruction from a supplied rendering, not a recovered or editable model. The website uses concise captions; `dist/assets/manifest.json` records the actual source. Planting’s model image is an original uploaded JPG.
 
 The About photo, `assets/about/jessie-polaroids.webp`, uses the owner’s supplied, already-redacted photograph. It was converted losslessly and had EXIF/XMP metadata removed; the image data and displayed pixels remain unchanged.
 
@@ -60,7 +63,7 @@ The only outstanding files are Poolside’s Procreate concept sketch and the sep
 
 1. Add the image under `dist/assets/projects/project-name/`, using folders such as `before/`, `model/`, `renderings/`, or `drawings/`.
 2. Find the old filename in the project HTML. Update both the image’s `src` and its enlargement button’s `data-src`, plus the actual `width` / `height`, descriptive `alt`, caption, and `data-caption`.
-3. Update the private asset manifest, save, and check the image, enlarged view, and mobile proportions. Preserve the top view panels’ `id` values so their switching buttons keep working.
+3. Update the asset manifest, save, and check the image, enlarged view, and mobile proportions. Preserve the top view panels’ `id` values so their switching buttons keep working.
 
 Project pages use paths beginning with `../assets/`; the homepage and About page use `assets/`. `../` means one folder up. To replace the portrait, update `.about-portrait img` in `dist/about.html`; portrait files belong in `dist/assets/about/`.
 
@@ -103,7 +106,7 @@ git commit -m "Update home title"
 git push -u origin edit/home-title
 ```
 
-`commit` saves a local version; `push` sends the branch to the private GitHub repository. Open a pull request on GitHub, review the changes, then merge. Use a fresh branch name for each change, and give `git add` the paths you actually edited.
+`commit` saves a local version; `push` sends the branch to the GitHub repository. Open a pull request on GitHub, review the changes, then merge. Use a fresh branch name for each change, and give `git add` the paths you actually edited.
 
 ## Public deployment
 
@@ -115,9 +118,9 @@ python3 scripts/build_public.py
 
 This rebuilds `out/`, excluding `download.html`, `download.js`, `downloads/`, and `assets/manifest.json`. The Sites configuration in `.openai/hosting.json` uses `out/`, which is generated output and ignored by Git.
 
-Publish the prepared output through Sites as a separate step. Building files or pushing to GitHub does not publish them. Download-page code and the provenance manifest stay in the private repository; source archives and download chunks remain private owner tools.
+Publish the prepared output through Sites as a separate step. Building files or pushing to GitHub does not update the live website. Download-page code and the provenance manifest are available in the public repository but excluded from the deployed site; generated source archives and download chunks remain local owner tools.
 
-## Private offline packages
+## Local offline packages
 
 Packaging is optional for everyday editing. To create an owner’s source archive, run:
 
@@ -125,7 +128,7 @@ Packaging is optional for everyday editing. To create an owner’s source archiv
 python3 scripts/package_site.py
 ```
 
-This creates `build/landscape-portfolio-source.zip` and rebuilds the checksum manifest and chunks in `dist/downloads/`. **`build/` and `dist/downloads/` are reproducible output and are excluded from Git.** These packages are for private owner use, not public source downloads.
+This creates `build/landscape-portfolio-source.zip` and rebuilds the checksum manifest and chunks in `dist/downloads/`. **`build/` and `dist/downloads/` are reproducible output and are excluded from Git.** These local packages are not included in the deployed website; source downloads are available through GitHub.
 
 For a self-contained HTML preview:
 

@@ -55,7 +55,7 @@ p + p { margin-top: 1.15rem; }
 .brand small { display: block; margin-top: 5px; font-size: 9px; text-transform: uppercase; letter-spacing: .17em; font-weight: 400; }
 .brand-mark { position: relative; width: 45px; height: 45px; border: 1px solid var(--ink); border-radius: 50%; text-align: center; line-height: 41px; font-family: var(--serif); font-size: 23px; font-style: italic; }
 .brand-mark > span { position: absolute; background: var(--background); top: -9px; right: -4px; line-height: 20px; font-family: var(--sans); font-size: 18px; }
-.site-nav { display: flex; align-items: center; gap: 35px; font-size: 12px; }
+.site-nav { display: flex; align-items: center; gap: 35px; font-size: 14.4px; }
 .site-nav a { text-decoration: none; padding: 12px 0; }
 .site-nav a:hover { text-decoration: underline; }
 .site-nav a:last-child { border-bottom: 1px solid var(--border); }
@@ -210,7 +210,7 @@ p + p { margin-top: 1.15rem; }
   .brand { font-size: 15px; }
   .brand-mark { width: 40px; height: 40px; line-height: 36px; }
   .site-nav { width: 100%; gap: 20px; justify-content: space-between; padding-top: 14px; }
-  .js-enabled .menu-toggle { display: inline-flex; align-items: center; gap: 18px; min-height: 44px; border: 1px solid var(--border); background: transparent; padding: 7px 12px; font-size: 12px; }
+  .js-enabled .menu-toggle { display: inline-flex; align-items: center; gap: 18px; min-height: 44px; border: 1px solid var(--border); background: transparent; padding: 7px 12px; font-size: 14.4px; }
   .js-enabled .site-nav { display: none; }
   .js-enabled .site-nav.is-open { display: flex; }
   .hero { grid-template-columns: 1fr; gap: 40px; padding-block: 54px; }
