@@ -1,0 +1,19 @@
+.DS_Store
+__pycache__/
+node_modules/
+.preview.pid
+
+# Local credentials and editor files
+.env
+.env.*
+!.env.example
+.vscode/
+.idea/
+*.log
+
+# Rebuild these with scripts/package_site.py; keep original site assets in Git.
+/build/
+/dist/downloads/
+/*.zip
+/*.tar.gz
+/jessie-portfolio-*.html

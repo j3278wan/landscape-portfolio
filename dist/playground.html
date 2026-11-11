@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Jessie Wang’s garden playground. Plant an imaginary garden, explore daylight and evening, and return to the landscape portfolio.">
+  <meta name="theme-color" content="#0b251b">
+  <title>Garden Playground — Jessie Wang</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="garden.css">
+  <link rel="stylesheet" href="theme.css">
+  <script src="garden.js" defer></script>
+</head>
+<body class="garden-entry" data-light="day" data-season="summer">
+  <a class="entry-skip" href="index.html">Back to the portfolio</a>
+  <header class="entry-header">
+    <a class="entry-name" href="index.html" aria-label="Jessie Wang, home"><img class="brand-logo" src="assets/jw-mark.svg" width="44" height="44" alt=""><span>JESSIE WANG<small>LANDSCAPE & DESIGN</small></span></a>
+    <p class="entry-edition">A SMALL EXPERIMENT<br>IN MAKING SPACE.</p>
+    <a class="skip-garden" href="index.html">Back to portfolio <svg viewBox="0 0 20 20" width="16" height="16" aria-hidden="true"><path d="M4 16 16 4M4 4h12v12" fill="none" stroke="currentColor" stroke-width="1.5"/></svg></a>
+  </header>
+  <main id="main" class="entry-main">
+    <section class="invitation" aria-labelledby="garden-title">
+      <div class="invitation-copy">
+        <p class="entry-eyebrow"><span class="live-dot" aria-hidden="true"></span> THE GARDEN PLAYGROUND</p>
+        <h1 id="garden-title">A little<br>room to<br><em>grow.</em></h1>
+        <p class="entry-description">Mix a few plants. Change the season.<br>Make a small garden of your own.</p>
+        <a class="enter-garden" href="index.html"><span>Back to the portfolio</span><span class="enter-arrow" aria-hidden="true"><svg viewBox="0 0 28 28" width="26" height="26"><path d="M5 14h18M15 6l8 8-8 8" stroke="currentColor" stroke-width="1.4" fill="none"/></svg></span></a>
+        <p class="entry-subnote">A playful experiment by Jessie Wang<br>Design, engineering & a little curiosity.</p>
+      </div>
+      <div class="garden-experiment">
+        <div class="plot-topline"><span>YOUR LITTLE PATCH</span><span class="plot-number" id="plant-count">0 / 48</span></div>
+        <div class="garden-canvas-wrap">
+          <svg class="garden-canvas" id="garden-canvas" viewBox="0 0 900 700" width="900" height="700" aria-labelledby="scene-title scene-description">
+            <title id="scene-title">An imaginary garden to plant in</title>
+            <desc id="scene-description">An illustrated garden with trees, a curved path and a pond. This playful illustration is separate from the portfolio projects.</desc>
+            <defs>
+              <pattern id="plot-grid" width="32" height="32" patternUnits="userSpaceOnUse"><path d="M32 0H0V32" fill="none" stroke="currentColor" stroke-width=".5" opacity=".16"/></pattern>
+              <filter id="plant-shadow" x="-60%" y="-60%" width="220%" height="240%"><feDropShadow dx="3" dy="8" stdDeviation="5" flood-color="#132e1b" flood-opacity=".15"/></filter>
+              <filter id="plot-shadow" x="-25%" y="-30%" width="150%" height="180%"><feDropShadow dx="0" dy="20" stdDeviation="16" flood-color="#29492d" flood-opacity=".13"/></filter>
+              <clipPath id="garden-boundary"><path d="M160 205C205 118 322 112 451 138C569 94 691 145 741 238C820 338 793 444 722 490C651 557 567 536 460 564C349 590 254 541 194 482C112 430 103 288 160 205Z"/></clipPath>
+            </defs>
+            <g class="draft-marks" aria-hidden="true">
+              <path d="M55 122H845M55 604H845M82 96V628M818 96V628" fill="none" stroke="currentColor" opacity=".24" stroke-width=".7"/>
+              <path d="M77 117l10 10m-10 0 10-10M813 117l10 10m-10 0 10-10M77 599l10 10m-10 0 10-10M813 599l10 10m-10 0 10-10" fill="none" stroke="currentColor" opacity=".5"/>
+              <text x="96" y="105" class="svg-note">IMAGINATION, NOT TO SCALE</text>
+              <text x="822" y="650" class="svg-note" text-anchor="end">PLANT A POSSIBILITY.</text>
+              <path d="M783 70V25m-7 13 7-13 7 13" fill="none" stroke="currentColor"/><text x="780" y="15" class="svg-note">N</text>
+            </g>
+            <g filter="url(#plot-shadow)">
+              <path class="ground-edge" d="M160 219C205 132 322 126 451 152C569 108 691 159 741 252C820 352 793 458 722 504C651 571 567 550 460 578C349 604 254 555 194 496C112 444 103 302 160 219Z"/>
+              <path class="ground-fill" d="M160 205C205 118 322 112 451 138C569 94 691 145 741 238C820 338 793 444 722 490C651 557 567 536 460 564C349 590 254 541 194 482C112 430 103 288 160 205Z"/>
+              <g clip-path="url(#garden-boundary)">
+                <rect x="105" y="100" width="700" height="500" fill="url(#plot-grid)"/>
+                <path class="garden-path-edge" d="M225 567C362 424 549 484 515 340S420 210 516 109" fill="none" stroke-width="68"/>
+                <path class="garden-path" d="M225 567C362 424 549 484 515 340S420 210 516 109" fill="none" stroke-width="58"/>
+                <path class="pond-edge" d="M571 321C593 275 665 277 700 303S734 378 696 402C652 430 598 403 585 382S558 353 571 321Z"/>
+                <path class="pond" d="M580 326C600 290 655 288 688 311S720 372 689 391C653 416 608 393 595 376S568 352 580 326Z"/>
+                <path class="water-line" d="M609 321c30-22 64-10 76 10m-68 42c27 17 48 12 60 0" fill="none" stroke-width="1.5"/>
+                <g class="stepping-stones" transform="translate(314 339) rotate(-24)"><rect x="-38" y="-42" width="25" height="52" rx="2"/><rect x="1" y="-39" width="25" height="52" rx="2"/><rect x="40" y="-36" width="25" height="52" rx="2"/></g>
+                <ellipse class="planting-bed" cx="289" cy="230" rx="120" ry="65" transform="rotate(-25 289 230)"/>
+                <ellipse class="planting-bed" cx="600" cy="473" rx="114" ry="48" transform="rotate(-10 600 473)"/>
+              </g>
+            </g>
+            <g id="existing-plants" aria-hidden="true"></g>
+            <g id="your-plants" aria-hidden="true"></g>
+            <g class="plot-label" aria-hidden="true"><path d="M203 481 147 537H64" fill="none" stroke="currentColor" stroke-width=".8"/><circle cx="203" cy="481" r="3" fill="currentColor"/><text x="64" y="556" class="svg-note">A PLACE TO BEGIN</text></g>
+            <g id="plant-cursor" pointer-events="none" opacity="0" aria-hidden="true"><circle id="cursor-ring" r="58" class="cursor-ring"/><g id="cursor-preview"></g></g>
+          </svg>
+          <p class="plot-hint" id="plot-hint">Drag to plant a trail. On touch, tap a spot.</p>
+        </div>
+        <div class="play-controls" hidden>
+          <div class="seed-options" role="group" aria-label="Choose what to plant">
+            <button class="seed-button" data-seed="hydrangea" type="button" aria-pressed="true">
+              <svg class="hydrangea-icon" width="28" height="28" viewBox="0 0 28 28" aria-hidden="true" focusable="false">
+                <g fill="none" stroke="currentColor" stroke-width="1.25" stroke-linejoin="round">
+                  <path d="M12 25C6 26 3 23 3 19C8 19 11 21 12 25ZM16 25C22 26 25 23 25 19C20 19 17 21 16 25Z" fill="currentColor" fill-opacity=".3"></path>
+                  <g transform="translate(9 8)"><path d="M0 -2C-4 -6 -7 -2 -3 0C-7 3 -3 7 0 3C3 7 7 3 3 0C7 -3 3 -7 0 -2Z"></path><circle cy=".5" r=".8" fill="currentColor" stroke="none"></circle></g>
+                  <g transform="translate(19 8)"><path d="M0 -2C-4 -6 -7 -2 -3 0C-7 3 -3 7 0 3C3 7 7 3 3 0C7 -3 3 -7 0 -2Z"></path><circle cy=".5" r=".8" fill="currentColor" stroke="none"></circle></g>
+                  <g transform="translate(14 17)"><path d="M0 -2C-4 -6 -7 -2 -3 0C-7 3 -3 7 0 3C3 7 7 3 3 0C7 -3 3 -7 0 -2Z"></path><circle cy=".5" r=".8" fill="currentColor" stroke="none"></circle></g>
+                </g>
+              </svg>Hydrangea
+            </button>
+            <button class="seed-button" data-seed="bloom" type="button" aria-pressed="false"><svg width="24" height="24" viewBox="0 0 24 24" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="1.2"><ellipse cx="12" cy="12" rx="4" ry="11"/><ellipse cx="12" cy="12" rx="11" ry="4"/><circle cx="12" cy="12" r="2" fill="currentColor"/></g></svg>Bloom</button>
+            <button class="seed-button" data-seed="canopy" type="button" aria-pressed="false"><svg width="24" height="24" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3C1 2 2 16 9 17v4h6v-4C23 16 24 2 12 3Z" fill="none" stroke="currentColor" stroke-width="1.2"/><path d="M12 8v10m0-5 4-3m-4 5-4-4" stroke="currentColor" fill="none"/></svg>Canopy</button>
+            <button class="seed-button" data-seed="grass" type="button" aria-pressed="false"><svg width="24" height="24" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21C10 10 6 6 3 5m9 16C12 11 17 3 21 2M12 21C9 9 11 4 12 2M12 21C16 12 21 11 23 11M12 21C9 14 5 12 2 13" stroke="currentColor" fill="none" stroke-width="1.2"/></svg>Grass</button>
+          </div>
+          <div class="size-options" role="group" aria-label="Plant size"><span class="control-label">SIZE</span><button type="button" class="size-button" data-size="small" aria-label="Small plants" aria-pressed="false">S</button><button type="button" class="size-button" data-size="medium" aria-label="Medium plants" aria-pressed="true">M</button><button type="button" class="size-button" data-size="large" aria-label="Large plants" aria-pressed="false">L</button></div>
+          <div class="plot-actions">
+            <button type="button" id="surprise-garden"><span aria-hidden="true">✦</span> Surprise me</button>
+            <button type="button" id="undo-garden" disabled>Undo</button>
+            <button type="button" id="reset-garden" disabled>Start fresh</button>
+          </div>
+          <div class="atmosphere-controls" role="group" aria-label="Garden atmosphere">
+            <button type="button" id="light-toggle" aria-pressed="false" aria-label="Turn on evening light"><span class="sun-icon" aria-hidden="true"></span><span id="light-label">Daylight</span></button>
+            <button type="button" id="season-toggle" aria-pressed="false" aria-label="Switch to autumn colours"><span aria-hidden="true">❋</span><span id="season-label">Summer</span></button>
+          </div>
+        </div>
+        <p id="garden-status" class="garden-status" role="status" aria-live="polite">Choose a plant and a size. Make it yours.</p>
+        <p class="keyboard-hint" id="keyboard-hint">Keyboard: focus the garden, use arrow keys to move, then Enter to plant.</p>
+        <noscript><p class="no-script">The garden interaction needs JavaScript. You can still return to the portfolio using the links on this page.</p></noscript>
+      </div>
+    </section>
+  </main>
+  <footer class="entry-footer"><p>GARDENS / SYSTEMS / POSSIBILITIES</p><span aria-hidden="true">+</span><p>IMAGINED BY JESSIE. PLANTED BY YOU.</p></footer>
+  <div class="entry-transition" aria-hidden="true"><span>Back to the portfolio.</span></div>
+</body>
+</html>

@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180 180" fill="none">
+  <title>JW sculptural monogram</title>
+  <defs>
+    <linearGradient id="face" x1="23" y1="18" x2="100" y2="110" gradientUnits="userSpaceOnUse"><stop stop-color="#6c8c72"/><stop offset=".28" stop-color="#3c644a"/><stop offset=".55" stop-color="#173e2b"/><stop offset=".83" stop-color="#4a7356"/><stop offset="1" stop-color="#234c36"/></linearGradient>
+    <linearGradient id="rim" x1="10" y1="10" x2="100" y2="100" gradientUnits="userSpaceOnUse"><stop stop-color="#b5c7a3"/><stop offset=".45" stop-color="#467357"/><stop offset="1" stop-color="#183f2c"/></linearGradient>
+    <path id="initials" d="M22 25H61V70C61 88 51 96 37 96C23 96 16 87 16 75M43 25L59 90L78 49L94 90L109 25"/>
+  </defs>
+  <g transform="translate(17 24) rotate(-16 65 65)" stroke-linecap="square" stroke-linejoin="round">
+    <use href="#initials" transform="translate(7 10)" stroke="#071c13" stroke-width="15"/>
+    <use href="#initials" transform="translate(4 6)" stroke="#163923" stroke-width="14"/>
+    <use href="#initials" stroke="url(#rim)" stroke-width="13.3"/>
+    <use href="#initials" stroke="url(#face)" stroke-width="12"/>
+  </g>
+</svg>

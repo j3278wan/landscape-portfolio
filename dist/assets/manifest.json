@@ -1,0 +1,453 @@
+{
+  "description": "Asset inventory for the two supplied landscape projects. Renderings are proposed designs, not photographs of completed construction.",
+  "projects": [
+    {
+      "id": "pool-garden",
+      "name": "Poolside Garden",
+      "received_in_chat": {
+        "before_photos": 4,
+        "procreate_concept_plan": 1,
+        "design_renderings": 4,
+        "videos": 1
+      },
+      "original_model_status": "User confirms the original SketchUp model was not saved. The current model-style image is an AI-assisted visual reconstruction; its generation source is recorded below."
+    },
+    {
+      "id": "terraced-garden",
+      "name": "Terraced Garden",
+      "received_in_chat": {
+        "before_photos": 5,
+        "model_views": 1,
+        "design_renderings": 3,
+        "videos": 1,
+        "planting_documentation_pdf": 1
+      }
+    }
+  ],
+  "assets": [
+    {
+      "path": "assets/projects/terraced-garden/renderings/aerial.webp",
+      "project": "terraced-garden",
+      "stage": "Design Rendering",
+      "title": "Bird’s-eye design rendering",
+      "source": {
+        "type": "pdf_embedded_image",
+        "file": "1.pdf",
+        "page": 1,
+        "xref": 22
+      },
+      "width": 885,
+      "height": 1064,
+      "note": "Extracted from the supplied PDF; original image aspect ratio retained."
+    },
+    {
+      "path": "assets/projects/terraced-garden/drawings/lower-garden-planting.webp",
+      "project": "terraced-garden",
+      "stage": "Planting Plan",
+      "title": "Lower garden planting layout",
+      "source": {
+        "type": "pdf_embedded_image",
+        "file": "1.pdf",
+        "page": 3,
+        "xref": 32
+      },
+      "width": 1734,
+      "height": 698,
+      "note": "Extracted from the supplied PDF; original image aspect ratio retained."
+    },
+    {
+      "path": "assets/projects/terraced-garden/drawings/terrace-planting.webp",
+      "project": "terraced-garden",
+      "stage": "Planting Plan",
+      "title": "Terrace boundary planting layout",
+      "source": {
+        "type": "pdf_embedded_image",
+        "file": "1.pdf",
+        "page": 4,
+        "xref": 35
+      },
+      "width": 1320,
+      "height": 1117,
+      "note": "Extracted from the supplied PDF; original image aspect ratio retained."
+    },
+    {
+      "path": "assets/projects/terraced-garden/drawings/plant-schedule.webp",
+      "project": "terraced-garden",
+      "stage": "Plant Schedule",
+      "title": "Plant schedule with quantities and dimensions",
+      "source": {
+        "type": "pdf_embedded_image",
+        "file": "1.pdf",
+        "page": 5,
+        "xref": 38
+      },
+      "width": 2145,
+      "height": 857,
+      "note": "Extracted from the supplied PDF; original image aspect ratio retained."
+    },
+    {
+      "path": "assets/projects/terraced-garden/documents/planting-plan.pdf",
+      "project": "terraced-garden",
+      "stage": "Planting Documentation",
+      "title": "Planting plan and plant schedule",
+      "source": {
+        "type": "uploaded_pdf",
+        "file": "1.pdf",
+        "file_id": "file_0000000050a881f5a9a1e8dc189f3ff2"
+      },
+      "pages": 5
+    },
+    {
+      "path": "assets/projects/pool-garden/videos/design-walkthrough.mp4",
+      "project": "pool-garden",
+      "stage": "Design Rendering",
+      "title": "Design walkthrough",
+      "source": {
+        "type": "uploaded_video",
+        "file_id": "file_000000007d8c81f59bc801e5415cdde2",
+        "filename": "835278cfd384c1cb80d57c7484188d5f.mp4"
+      },
+      "width": 1280,
+      "height": 720,
+      "duration_seconds": 19.6,
+      "note": "Original uploaded video; shows a design visualization, not completed construction."
+    },
+    {
+      "path": "assets/projects/terraced-garden/videos/design-walkthrough.mp4",
+      "project": "terraced-garden",
+      "stage": "Design Rendering",
+      "title": "Design walkthrough",
+      "source": {
+        "type": "uploaded_video",
+        "file_id": "file_00000000068481f5a3838ccb069616e5",
+        "filename": "a9c45a2c59dc29f55d67a8beea5b50f4.mp4"
+      },
+      "width": 1280,
+      "height": 720,
+      "duration_seconds": 45.811519,
+      "note": "Original uploaded video; shows a design visualization, not completed construction."
+    },
+    {
+      "path": "assets/projects/pool-garden/studies/model-study.png",
+      "project": "pool-garden",
+      "stage": "Model Study",
+      "title": "AI-assisted model-style reconstruction",
+      "source": {
+        "type": "ai_assisted_image_edit",
+        "reference": "Poolside night aerial Design Rendering attached in chat",
+        "tool": "image_gen",
+        "generated_file": "exec-6e13930b-956e-4fa3-9a1e-0c73f02cd3d9.png"
+      },
+      "width": 1026,
+      "height": 1533,
+      "note": "Requested by the user because the original SketchUp model was not saved. A visual approximation, not a recovered or editable 3D model. The user requested a concise display caption matching Planting; generation provenance remains recorded here.",
+      "display_label": "3D Model — Overall layout"
+    },
+    {
+      "path": "assets/projects/pool-garden/before/pool-overview.jpg",
+      "project": "pool-garden",
+      "stage": "Existing Site",
+      "title": "Pool overview",
+      "source": {
+        "type": "uploaded_zip_image",
+        "archive": "Archive.zip",
+        "file_id": "file_00000000136c81f58cd0433a6ddf407a",
+        "filename": "bf76959feb381c620fe9d83e942f31ca.jpg"
+      },
+      "width": 1702,
+      "height": 1276,
+      "sha256": "504ddf106776bbbea85f57ee9e3ff9d7466ae1dc58aadc0dec322ae397058fea",
+      "note": "Original uploaded JPEG preserved without edits. Original image aspect ratio retained."
+    },
+    {
+      "path": "assets/projects/pool-garden/before/pool-border.jpg",
+      "project": "pool-garden",
+      "stage": "Existing Site",
+      "title": "Pool border",
+      "source": {
+        "type": "uploaded_zip_image",
+        "archive": "Archive.zip",
+        "file_id": "file_00000000136c81f58cd0433a6ddf407a",
+        "filename": "52a7a1dc7c7ec45d3e1ccdc5e6d98342.jpg"
+      },
+      "width": 4032,
+      "height": 3024,
+      "sha256": "80eb26cca178ac8ea9c39944bdd6647cb3920d8cd115df3bb287465cb1da243b",
+      "note": "Original uploaded JPEG preserved without edits. Original image aspect ratio retained."
+    },
+    {
+      "path": "assets/projects/pool-garden/before/house-patio.jpg",
+      "project": "pool-garden",
+      "stage": "Existing Site",
+      "title": "House patio",
+      "source": {
+        "type": "uploaded_zip_image",
+        "archive": "Archive.zip",
+        "file_id": "file_00000000136c81f58cd0433a6ddf407a",
+        "filename": "c38f02f530e3c5c36a743de805a97432.jpg"
+      },
+      "width": 1702,
+      "height": 1276,
+      "sha256": "941abc0825e83cd3698a830042f357648375fafae827ff69e5b04816fc068570",
+      "note": "Original uploaded JPEG preserved without edits. Original image aspect ratio retained."
+    },
+    {
+      "path": "assets/projects/pool-garden/before/garden-shed.jpg",
+      "project": "pool-garden",
+      "stage": "Existing Site",
+      "title": "Garden shed",
+      "source": {
+        "type": "uploaded_zip_image",
+        "archive": "Archive.zip",
+        "file_id": "file_00000000136c81f58cd0433a6ddf407a",
+        "filename": "8036da1ce5290a75e567d58dec3f8669.jpg"
+      },
+      "width": 4032,
+      "height": 3024,
+      "sha256": "5622ee47763690f27c106e5de483a6c61860c15a0798e2df0a31a95570886af4",
+      "note": "Original uploaded JPEG preserved without edits. Original image aspect ratio retained."
+    },
+    {
+      "path": "assets/projects/terraced-garden/before/woodland-boundary.jpg",
+      "project": "terraced-garden",
+      "stage": "Existing Site",
+      "title": "Woodland boundary",
+      "source": {
+        "type": "uploaded_zip_image",
+        "archive": "Archive.zip",
+        "file_id": "file_000000009aa081f5aaee50d4749b3950",
+        "filename": "3d408d864b2d4da1856de2f61e794329.jpg"
+      },
+      "width": 1441,
+      "height": 1080,
+      "sha256": "add11ef2b73ef608db7127ced2d1732e34cf89d7799b8b3dbd385aca083b6bad",
+      "note": "Original uploaded JPEG preserved without edits. Red site-measurement annotations are part of the supplied original."
+    },
+    {
+      "path": "assets/projects/terraced-garden/before/curved-steps.jpg",
+      "project": "terraced-garden",
+      "stage": "Existing Site",
+      "title": "Curved steps",
+      "source": {
+        "type": "uploaded_zip_image",
+        "archive": "Archive.zip",
+        "file_id": "file_000000009aa081f5aaee50d4749b3950",
+        "filename": "856792da57a1d8bfdc83137e51e6a079.jpg"
+      },
+      "width": 1441,
+      "height": 1080,
+      "sha256": "7ba0ede51c78f4572c3378db973fc603e1ac93e57ee11e8e545497b5752206db",
+      "note": "Original uploaded JPEG preserved without edits. Red site-measurement annotations are part of the supplied original."
+    },
+    {
+      "path": "assets/projects/terraced-garden/before/terrace-edge.jpg",
+      "project": "terraced-garden",
+      "stage": "Existing Site",
+      "title": "Terrace edge",
+      "source": {
+        "type": "uploaded_zip_image",
+        "archive": "Archive.zip",
+        "file_id": "file_000000009aa081f5aaee50d4749b3950",
+        "filename": "d54b35d3dedaa27ad875c39ea2b081a3.jpg"
+      },
+      "width": 1441,
+      "height": 1080,
+      "sha256": "709fec537f5949aaf42821578738c097ae174f2009d0a58d3345435d405e9d7b",
+      "note": "Original uploaded JPEG preserved without edits. Red site-measurement annotations are part of the supplied original."
+    },
+    {
+      "path": "assets/projects/terraced-garden/before/lower-lawn.jpg",
+      "project": "terraced-garden",
+      "stage": "Existing Site",
+      "title": "Lower lawn",
+      "source": {
+        "type": "uploaded_zip_image",
+        "archive": "Archive.zip",
+        "file_id": "file_000000009aa081f5aaee50d4749b3950",
+        "filename": "edb6b03d7247f4095ad2db468ab94585.jpg"
+      },
+      "width": 1440,
+      "height": 1080,
+      "sha256": "084d8dbdcd126f22d07c6febde38a57c0225530c7f40248dc8c88d77fc84b6ec",
+      "note": "Original uploaded JPEG preserved without edits. Red site-measurement annotations are part of the supplied original."
+    },
+    {
+      "path": "assets/projects/terraced-garden/before/upper-terrace.jpg",
+      "project": "terraced-garden",
+      "stage": "Existing Site",
+      "title": "Upper terrace",
+      "source": {
+        "type": "uploaded_zip_image",
+        "archive": "Archive.zip",
+        "file_id": "file_000000009aa081f5aaee50d4749b3950",
+        "filename": "fa5cafddb5e6203fbe4a3890bdf98961.jpg"
+      },
+      "width": 1441,
+      "height": 1080,
+      "sha256": "ccf569550509eaa59ae7f1d4ded8bd233ab31680f3bcc2ada17dcc38732a2769",
+      "note": "Original uploaded JPEG preserved without edits. Red site-measurement annotations are part of the supplied original."
+    },
+    {
+      "path": "assets/projects/pool-garden/renderings/aerial-night.jpg",
+      "project": "pool-garden",
+      "stage": "Design Rendering",
+      "title": "Overall layout",
+      "source": {
+        "type": "uploaded_zip_image",
+        "archive": "Archive.zip",
+        "file_id": "file_000000006f5081f5bb57aa8f04b8910b",
+        "filename": "437301c72dce86e4e5a86f548b8a478c.jpg"
+      },
+      "width": 1280,
+      "height": 1913,
+      "sha256": "c5b2abe15675667040d76fea9c415d9a234950a8591723438a7bf696f7f1f03f",
+      "note": "Original uploaded JPEG preserved without edits or aspect ratio changes. Design visualization, not a photograph of completed construction."
+    },
+    {
+      "path": "assets/projects/pool-garden/renderings/pool-and-terrace.jpg",
+      "project": "pool-garden",
+      "stage": "Design Rendering",
+      "title": "Pool and terrace",
+      "source": {
+        "type": "uploaded_zip_image",
+        "archive": "Archive.zip",
+        "file_id": "file_000000006f5081f5bb57aa8f04b8910b",
+        "filename": "7ae17f33c5ca244cfb29d603056ff895.jpg"
+      },
+      "width": 2460,
+      "height": 1383,
+      "sha256": "c3b949e27776151ad20ae6537f2cd8718b3fa4817479628e3bb2b17905822ffe",
+      "note": "Original uploaded JPEG preserved without edits or aspect ratio changes. Design visualization, not a photograph of completed construction."
+    },
+    {
+      "path": "assets/projects/pool-garden/renderings/garden-approach.jpg",
+      "project": "pool-garden",
+      "stage": "Design Rendering",
+      "title": "Garden approach",
+      "source": {
+        "type": "uploaded_zip_image",
+        "archive": "Archive.zip",
+        "file_id": "file_000000006f5081f5bb57aa8f04b8910b",
+        "filename": "5566c8e947376f66795862c5859122d6.jpg"
+      },
+      "width": 1920,
+      "height": 1080,
+      "sha256": "68a084264272383590142f5f706dd982bd1486db53bf4557ebdf7673ff3ca6fe",
+      "note": "Original uploaded JPEG preserved without edits or aspect ratio changes. Design visualization, not a photograph of completed construction."
+    },
+    {
+      "path": "assets/projects/pool-garden/renderings/evening-lighting.jpg",
+      "project": "pool-garden",
+      "stage": "Design Rendering",
+      "title": "Evening lighting",
+      "source": {
+        "type": "uploaded_zip_image",
+        "archive": "Archive.zip",
+        "file_id": "file_000000006f5081f5bb57aa8f04b8910b",
+        "filename": "8c8fc749eb3d18dbebde849d8550ee94.jpg"
+      },
+      "width": 2276,
+      "height": 1280,
+      "sha256": "ea73ec3d3faccafac62807b85bcf3e98d8b476ed61c7f30fe158e85a02f94b5e",
+      "note": "Original uploaded JPEG preserved without edits or aspect ratio changes. Design visualization, not a photograph of completed construction."
+    },
+    {
+      "path": "assets/projects/terraced-garden/model/top-view-original.jpg",
+      "project": "terraced-garden",
+      "stage": "3D Model",
+      "title": "Overall layout",
+      "source": {
+        "type": "uploaded_zip_image",
+        "archive": "Archive.zip",
+        "file_id": "file_000000008b1881f5ba22484f933e11e9",
+        "filename": "def5920c25dea75514c0e4de313723cc.jpg"
+      },
+      "width": 1280,
+      "height": 1474,
+      "sha256": "760421145f8988dd9e1e6eef3ab39c08f868dc996a547408d1e01750b2bccbc5",
+      "note": "Original uploaded JPEG preserved without edits or aspect ratio changes. A SketchUp model view, not a design rendering."
+    },
+    {
+      "path": "assets/projects/terraced-garden/renderings/terrace-borders.jpg",
+      "project": "terraced-garden",
+      "stage": "Design Rendering",
+      "title": "Terrace borders",
+      "source": {
+        "type": "uploaded_zip_image",
+        "archive": "Archive.zip",
+        "file_id": "file_000000008b1881f5ba22484f933e11e9",
+        "filename": "f9c3750bf3ac35ee5a0dcedf52b5c780.jpg"
+      },
+      "width": 2276,
+      "height": 1280,
+      "sha256": "9eff46cf55d55d286639f723c6ec178c0c21a09a3bb04cd6423f7b7c2c9bb308",
+      "note": "Original uploaded JPEG preserved without edits or aspect ratio changes. Design visualization, not a photograph of completed construction."
+    },
+    {
+      "path": "assets/projects/terraced-garden/renderings/lower-garden.jpg",
+      "project": "terraced-garden",
+      "stage": "Design Rendering",
+      "title": "Lower garden",
+      "source": {
+        "type": "uploaded_zip_image",
+        "archive": "Archive.zip",
+        "file_id": "file_000000008b1881f5ba22484f933e11e9",
+        "filename": "1de352630a5cbfacfc371963767fed48.jpg"
+      },
+      "width": 2276,
+      "height": 1280,
+      "sha256": "22785ada3988cc4aa9b0d3e2b16954cdc74b5f075205aa9161428916a4e32fc3",
+      "note": "Original uploaded JPEG preserved without edits or aspect ratio changes. Design visualization, not a photograph of completed construction."
+    }
+  ],
+  "unavailable_original_files": [
+    {
+      "project": "pool-garden",
+      "stage": "Concept Sketch",
+      "count": 1,
+      "reason": "Procreate plan is visible in chat; original image file is not available in the execution workspace."
+    },
+    {
+      "project": "pool-garden",
+      "stage": "Model View Replacement",
+      "count": 1,
+      "width": 728,
+      "height": 1178,
+      "reason": "User requested a new cropped model-style image shown inline in chat. Its image file is not available in the two Before ZIPs; current study remains until the replacement file arrives."
+    }
+  ],
+  "branding": [
+    {
+      "path": "assets/jw-mark.svg",
+      "description": "Original interlocking JW vector monogram. Website identity, not project artwork."
+    },
+    {
+      "path": "assets/jw-sculpture.svg",
+      "description": "Original static dimensional interpretation of the JW monogram for the home background. Not a project rendering."
+    }
+  ],
+  "personal_images": [
+    {
+      "path": "assets/about/jessie-polaroids.webp",
+      "title": "Jessie Wang — user-supplied Polaroid photo",
+      "width": 3024,
+      "height": 4032,
+      "source": {
+        "type": "uploaded_photo_format_conversion",
+        "file_id": "file_0000000054b481f5b9f20264b177993d",
+        "archive": "IMG_2376.HEIC.zip",
+        "original_file": "IMG_2376.HEIC",
+        "conversion": "HEIC decoded with its orientation, then encoded as lossless WebP. Decoded RGBA pixels verified identical to the source PNG."
+      },
+      "note": "The other face is covered by the user in the supplied photo. No generative edit, facial retouching, object removal, resizing or cropping was applied. Replaces the previously rejected generated personal image.",
+      "sha256": "31383e1c479ddc473a754e742ea93fc27d6bfca4a9f9f8b3a05db3bce7655c8a",
+      "metadata_cleanup": {
+        "removed": [
+          "EXIF",
+          "XMP"
+        ],
+        "pixel_verification": "Encoded VP8L image payload unchanged; decoded RGBA pixels identical. Removes embedded location/camera metadata without changing the photo."
+      }
+    }
+  ]
+}

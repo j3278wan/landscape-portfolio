@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Download Jessie Wang’s complete landscape portfolio website for local viewing and editing.">
+  <meta name="theme-color" content="#0b251b">
+  <title>Download — Jessie Wang</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="theme.css">
+  <script src="download.js" defer></script>
+  <style>
+    .download-page { min-height:100svh; display:flex; flex-direction:column; }
+    .download-header { min-height:100px; }
+    .download-home { font-size:13px; padding-block:12px; }
+    .download-main { width:min(680px,calc(100% - 2 * var(--page-gutter))); flex:1; padding-block:72px; }
+    .download-main h1 { margin:18px 0 24px; font-size:clamp(38px,7vw,58px); letter-spacing:-.03em; }
+    .download-intro { max-width:540px; color:var(--muted); }
+    .download-panel { margin-block:36px; padding:28px; border:1px solid var(--border); background:var(--surface); }
+    .download-action { display:inline-flex; align-items:center; justify-content:center; min-height:48px; padding:12px 22px; border:1px solid var(--accent); color:var(--background); background:var(--accent); text-decoration:none; font-size:14px; }
+    .download-action:hover { background:var(--ink); color:var(--background); }
+    .download-action:disabled { cursor:wait; opacity:.65; }
+    .download-panel p { margin-top:16px; font-size:14px; color:var(--muted); }
+    .download-panel progress { display:block; width:100%; height:12px; margin-top:24px; accent-color:var(--accent); }
+    .download-panel [hidden] { display:none; }
+    .download-error { color:var(--ink) !important; }
+    .download-save { margin-top:20px; }
+    .download-main h2 { font-size:26px; margin-bottom:16px; }
+    .download-steps { margin:0; padding-left:22px; color:var(--muted); font-size:15px; }
+    .download-steps li { padding:6px 0 6px 5px; }
+    .download-steps code { color:var(--ink); overflow-wrap:anywhere; }
+    .download-footer { padding-block:24px; border-top:1px solid var(--border); font-size:12px; color:var(--muted); }
+    @media(max-width:480px) { .download-main { padding-block:44px; } .download-panel { padding:22px; } .download-header .brand { font-size:14px; gap:10px; } }
+  </style>
+</head>
+<body class="download-page">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header container download-header">
+    <a class="brand" href="index.html" aria-label="Jessie Wang, home"><img class="brand-logo" src="assets/jw-mark.svg" width="44" height="44" alt=""><span>Jessie Wang<small>Landscape design</small></span></a>
+    <a class="download-home" href="index.html">Home</a>
+  </header>
+  <main id="main" class="download-main container">
+    <p class="eyebrow">Keep a local copy</p>
+    <h1>Download portfolio</h1>
+    <p class="download-intro">The complete editable website, including all current photos, drawings and both project videos.</p>
+    <section class="download-panel" aria-label="Portfolio download">
+      <button id="download-button" class="download-action" type="button" aria-describedby="download-status">Download ZIP</button>
+      <p id="download-status" role="status" aria-live="polite" aria-atomic="true">About 43 MB. Keep this page open until the download is ready.</p>
+      <progress id="download-progress" max="100" value="0" aria-label="Portfolio download progress" hidden></progress>
+      <p id="download-error" class="download-error" role="alert" hidden></p>
+      <a id="download-save" class="download-action download-save" download="Jessie-Portfolio.zip" hidden>Save ZIP again</a>
+      <noscript><p>Enable JavaScript to download the complete ZIP from this page.</p></noscript>
+    </section>
+    <section aria-labelledby="opening-title">
+      <h2 id="opening-title">Open it on your computer</h2>
+      <ol class="download-steps">
+        <li>Save <code>Jessie-Portfolio.zip</code> to your Downloads folder.</li>
+        <li>Double-click the ZIP to extract it.</li>
+        <li>Inside <code>landscape-portfolio</code>, open <code>dist/index.html</code> in your browser.</li>
+      </ol>
+      <p class="download-intro" style="margin-top:20px;font-size:14px">Keep the entire folder together so every page, image and video remains available. The README explains how to edit the website.</p>
+    </section>
+  </main>
+  <footer class="container download-footer">Jessie Wang · Landscape portfolio</footer>
+</body>
+</html>

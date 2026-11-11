@@ -1,0 +1,36 @@
+/* V5 shared palette: change these colours to update every page. */
+:root,body,.case-page,.profile-page,body[data-light="day"],body[data-light="dusk"] {
+  --background:#0b251b;
+  --surface:#143326;
+  --ink:#f5f6ef;
+  --muted:#bdcbbb;
+  --accent:#d5e2ca;
+  --accent-light:#244936;
+  --border:#345041;
+  --paper:#0b251b;
+  --soft-ink:#bdcbbb;
+  --line:#345041;
+  color-scheme:dark;
+}
+body { background:var(--background); color:var(--ink); }
+.brand-logo { width:44px; height:44px; display:block; flex-shrink:0; }
+a:hover { color:var(--ink); }
+a:focus-visible,button:focus-visible { outline-color:var(--accent); }
+.brand-mark { border:0; }
+.asset-pending { background:var(--surface); border-color:var(--border); }
+.lightbox { background:#112d21; color:var(--ink); }
+.lightbox-close { background:var(--surface); color:var(--ink); border-color:var(--border); }
+.lightbox::backdrop { background:rgba(1,10,5,.9); }
+.image-zoom:hover .zoom-indicator { color:var(--background); background:var(--ink); }
+.view-tabs { background:#102d20; }
+.view-tabs button[aria-selected="true"] { background:#f0f4e8; color:#122c1e; }
+.view-tabs button:hover:not([aria-selected="true"]) { background:#244836; }
+.view-switcher.is-enhanced .view-panels { background:#102d21; border:1px solid var(--border); }
+.document-link:hover,.button:hover { background:var(--accent); color:var(--background); }
+.case-reading-progress { background:#b6caa5; }
+.skills-list span { border-color:var(--border); }
+.garden-entry .entry-transition { background:#0b251b; color:var(--ink); }
+.garden-entry .entry-header,.garden-entry .entry-footer { border-color:var(--border); }
+.garden-entry h1 { font-size:clamp(50px,6vw,88px); }
+.garden-entry .entry-skip { background:var(--surface); color:var(--ink); }
+@media(max-width:720px) { .garden-entry h1 { font-size:clamp(44px,13vw,72px); } }

@@ -1,0 +1,80 @@
+/* Image-first case studies: views, context, then the final walkthrough. */
+.case-page { --ink:#183c2b; --accent:#345e43; --surface:#f0f1e9; }
+.case-page .site-header { min-height:88px; }
+.case-page .project-intro { padding-top:24px; margin-bottom:0; color:var(--ink); }
+.case-page .back-link { display:inline-flex; align-items:center; gap:8px; margin-bottom:16px; font-size:11px; }
+.case-page .project-intro > .eyebrow { font-size:9px; letter-spacing:.14em; color:var(--muted); }
+.case-page .display-title { font-family:var(--serif); font-size:clamp(28px,3vw,43px); font-weight:400; line-height:1.12; letter-spacing:-.035em; margin-block:9px 0; }
+.project-showcase { padding-top:10px; }
+.view-switcher { margin-top:0; }
+.view-switcher-heading { display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:16px; padding-block:18px; }
+.view-switcher-heading > p { font-family:var(--serif); font-size:clamp(18px,2vw,23px); font-style:italic; }
+.view-tabs { display:inline-flex; flex-wrap:wrap; gap:4px; padding:4px; background:var(--surface); border:1px solid var(--border); border-radius:28px; }
+.view-tabs button { min-height:44px; border:0; background:transparent; border-radius:24px; padding:10px 19px; font-size:12px; color:var(--ink); }
+.view-tabs button[aria-selected="true"] { background:var(--ink); color:#f7f8e9; }
+.view-tabs button:hover:not([aria-selected="true"]) { background:#e0e6d9; }
+.view-tabs button:focus-visible { outline:2px solid var(--accent); outline-offset:3px; }
+.view-panels { margin-top:0; }
+.view-switcher.is-enhanced .view-panels { display:block; padding:clamp(10px,1.5vw,20px); background:var(--surface); }
+.view-switcher.is-enhanced .view-panel { animation:view-appear .25s ease-out both; }
+/* The frame is bounded, but each image keeps its intrinsic ratio and remains fully visible. */
+.view-switcher.is-enhanced .view-panel .image-zoom { width:fit-content; max-width:100%; margin-inline:auto; background:transparent; }
+.view-switcher.is-enhanced .view-panel img { width:auto; max-width:100%; height:auto; max-height:min(54svh,560px); object-fit:contain; margin-inline:auto; }
+.view-switcher .image-caption { max-width:780px; margin-inline:auto; padding-top:2px; font-size:10px; }
+.view-switcher .image-caption span + span { margin-top:0; }
+.view-hint { color:var(--muted); font-size:10px; margin-top:11px; }
+.project-overview { padding-block:42px; border-bottom:1px solid var(--border); }
+.case-page .project-overview .project-summary { padding-top:0; max-width:530px; font-size:17px; }
+.case-page .project-overview .project-meta { margin:0; border-block:0; padding-block:0; gap:18px 32px; }
+.case-page .project-jump-links { gap:12px 28px; padding-block:22px; }
+.case-page .project-jump-links a { border-bottom:1px solid transparent; }
+.case-page .project-jump-links a[aria-current] { color:var(--accent); border-color:currentColor; }
+.case-page .story-section { padding-block:54px; }
+.case-page .story-section .section-title { font-size:clamp(28px,3.2vw,42px); }
+.case-page .process-list article { padding:0 0 20px; border-top:1px solid var(--border); background:transparent; }
+.case-page .step-index { display:block; padding-top:16px; font-size:14px; color:var(--muted); }
+.case-page .next-project { border-bottom:1px solid var(--border); }
+.case-page .next-project .section-title { font-family:var(--serif); font-size:30px; letter-spacing:-.03em; }
+.case-page .next-project:hover .next-arrow { transform:translate(4px,-4px); }
+.next-arrow { transition:transform .2s; }
+.case-page .video-section { margin-top:0; }
+.case-page .video-section h2 { margin-top:0; }
+.case-page .video-section > p { margin-block:12px 24px; }
+.case-reading-progress { position:fixed; z-index:30; left:0; top:0; width:100%; height:2px; background:#6f8f4e; pointer-events:none; transform:scaleX(0); transform-origin:left; }
+@keyframes view-appear { from { opacity:.5; transform:translateY(4px); } to { opacity:1; transform:translateY(0); } }
+@media (max-width:1000px) { .project-overview .story-grid { grid-template-columns:1fr; gap:24px; } }
+@media (max-width:720px) {
+ .case-page .site-header { min-height:78px; }
+ .case-page .project-intro { padding-top:20px; }
+ .case-page .back-link { margin-bottom:12px; }
+ .case-page .display-title { font-size:30px; }
+ .project-showcase { padding-top:6px; }
+ .view-switcher-heading { align-items:flex-start; flex-direction:column; gap:12px; padding-block:16px; }
+ .view-switcher-heading > p { font-size:18px; }
+ .view-tabs button { padding-inline:16px; font-size:11px; }
+ .view-switcher.is-enhanced .view-panel img { max-height:48svh; }
+ .view-hint { font-size:10px; line-height:1.6; }
+ .project-overview { padding-block:30px; }
+ .case-page .project-overview .project-summary { font-size:15px; }
+ .case-page .project-jump-links { gap:8px 20px; }
+ .case-page .story-section { padding-block:40px; }
+}
+@media (prefers-reduced-motion:reduce) {
+ .view-switcher.is-enhanced .view-panel { animation:none; }
+ .next-arrow { transition:none; }
+}
+
+/* V5: short image-led cases. Empty slots are plain notes, never invented work. */
+.case-summary { display:flex; justify-content:space-between; align-items:baseline; gap:24px; padding-block:28px 12px; }
+.case-summary p { max-width:620px; font-size:16px; line-height:1.7; }
+.case-summary > span { color:var(--muted); font-size:11px; line-height:1.7; }
+.pending-view { min-height:180px; display:grid; place-items:center; padding:28px; text-align:center; color:var(--muted); font-size:13px; }
+.pending-note { margin-top:20px; color:var(--muted); font-size:13px; }
+.case-page .story-section > .section-title { margin-top:0; }
+.case-page .video-section video { display:block; width:100%; height:auto; background:#081610; }
+.case-page .page-footer > a { display:inline-flex; align-items:center; gap:10px; }
+@media(max-width:720px) {
+ .case-summary { flex-direction:column; gap:8px; padding-block:22px 8px; }
+ .case-summary p { font-size:15px; }
+ .pending-view { min-height:150px; padding:20px; }
+}

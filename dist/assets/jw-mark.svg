@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" fill="none">
+  <title>JW monogram</title>
+  <g stroke="#f5f6ef" stroke-width="6.5" stroke-linecap="square" stroke-linejoin="round">
+    <path d="M22 25H61V70C61 88 51 96 37 96C23 96 16 87 16 75"/>
+    <path d="M43 25L59 90L78 49L94 90L109 25"/>
+  </g>
+</svg>
